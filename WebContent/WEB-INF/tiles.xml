@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+<tiles-definitions>
+<definition name="adminlayout" template="/WEB-INF/adminLayout/alayout.jsp">
+<put-attribute name="ah" value="/WEB-INF/adminLayout/aheader.jsp"/>
+<put-attribute name="af" value="/WEB-INF/adminLayout/afooter.jsp"/>
+<put-attribute name="am" value="/WEB-INF/adminLayout/amenu.jsp"/>
+<put-attribute name="ab" value="/WEB-INF/adminLayout/abody.jsp"/>
+</definition>
+
+<definition name="userlayout" template="/WEB-INF/userLayout/ulayout.jsp">
+<put-attribute name="uh" value="/WEB-INF/userLayout/uheader.jsp"/>
+<put-attribute name="uf" value="/WEB-INF/userLayout/ufooter.jsp"/>
+<put-attribute name="um" value="/WEB-INF/userLayout/umenu.jsp"/>
+<put-attribute name="ub" value="/WEB-INF/userLayout/ubody.jsp"/>
+</definition>
+
+<definition name="regist" extends="adminlayout">
+<put-attribute name="ab" value="/WEB-INF/jsp/regist.jsp"/>
+
+</definition>
+
+<definition name="S" extends="adminlayout">
+<put-attribute name="ab" value="/WEB-INF/jsp/S.jsp"/>
+
+</definition>
+
+
+<definition name="login" extends="adminlayout">
+<put-attribute name="ah" value=""/>
+<put-attribute name="am" value=""/>
+<put-attribute name="ab" value="/WEB-INF/jsp/login.jsp"/>
+
+</definition>
+
+<definition name="admin" extends="adminlayout">
+<put-attribute name="ab" value="/WEB-INF/jsp/AB.jsp"/>
+
+</definition>
+
+<definition name="user" extends="userlayout">
+<put-attribute name="ub" value="/WEB-INF/jsp/UB.jsp"/>
+
+</definition>
+
+
+
+
+</tiles-definitions>
